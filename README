@@ -1,0 +1,1 @@
+This is just a really basic example of how to use PHP's autoload function to automatically load classes when they are called.  For fun I threw in some exception handling as well to further illustate the OOP approach.
