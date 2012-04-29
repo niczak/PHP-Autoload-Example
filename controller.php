@@ -12,6 +12,7 @@ try {
 }
 catch(Exception $e) {
   echo "Exception caught: {$e->getMessage()}\n\n";
+  echo "{$e->getTraceAsString()}\n\n";
 }
 
 if(empty($e)) {
