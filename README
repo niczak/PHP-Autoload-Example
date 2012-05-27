@@ -1,4 +1,4 @@
-This is just a really basic example of how to use PHP's autoload function to automatically load classes when they are called.  For fun I threw in some exception handling as well to further illustate the OOP approach.
+<h2>This is just a really basic example of how to use PHP's autoload function to automatically load classes when they are called.  For fun I threw in some exception handling as well to further illustate the OOP approach.</h2>
 
 To invoke this just run it from the command line using: 'php controller.php' and you will see the following output:
 
