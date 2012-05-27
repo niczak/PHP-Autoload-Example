@@ -1,4 +1,13 @@
 <?php 
+
+/**
+ * Controller for simple class example with support
+ * for autoloading and exception handling.
+ *
+ * @author Nicholas Kreidberg <nicholas@nicholaskreidberg.com>
+ * @copyright 2012, Nicholas Kreidberg
+ */
+
 function __autoload($class)
 {
   include_once('./Classes/' . $class . '.class.php');
