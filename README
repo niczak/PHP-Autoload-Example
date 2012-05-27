@@ -1,9 +1,11 @@
-<h2>This is just a really basic example of how to use PHP's autoload function to automatically load classes when they are called.  For fun I threw in some exception handling as well to further illustate the OOP approach.</h2>
+This is just a really basic example of how to use PHP's autoload function to automatically load classes when they are called.  For fun I threw in some exception handling as well to further illustate the OOP approach.
 
 To invoke this just run it from the command line using: 'php controller.php' and you will see the following output:
 
 Original object var_dump:
-object(Social)#1 (3) {
+object(Social)#1 (4) {
+  ["email"]=>
+  string(30) "nicholas@nicholaskreidberg.com"
   ["service"]=>
   string(7) "Twitter"
   ["user"]=>
@@ -14,6 +16,7 @@ object(Social)#1 (3) {
 
 Calling getter methods [original object]...
 
+nicholas@nicholaskreidberg.com
 @niczak
 Twitter
 twitter.com/niczak
@@ -22,7 +25,9 @@ Setting new values ...
 
 
 Modified object var_dump:
-object(Social)#1 (3) {
+object(Social)#1 (4) {
+  ["email"]=>
+  string(16) "niczak@gmail.com"
   ["service"]=>
   string(8) "Facebook"
   ["user"]=>
@@ -33,6 +38,7 @@ object(Social)#1 (3) {
 
 Calling getter methods [modified object]...
 
+niczak@gmail.com
 niczak
 Facebook
 http://facebook.com/niczak

@@ -15,7 +15,7 @@ function __autoload($class)
 
 // Instantiate new Social object.
 try {
-  $obj = new Social("Twitter", "@niczak", "twitter.com/niczak");
+  $obj = new Social("nicholas@nicholaskreidberg.com", "Twitter", "@niczak", "twitter.com/niczak");
   // Broken example below, uncomment out to test exception handling
   //$obj = new Social("Twitter", "@niczak");
 }
@@ -32,12 +32,14 @@ if(empty($e)) {
 
   // Call all getter methods [original object]
   printf("\nCalling getter methods [original object]...\n\n");
+  echo $obj->getEmail()."\n";
   echo $obj->getUser()."\n";
   echo $obj->getService()."\n";
   echo $obj->getURL()."\n";
 
   // Call all setter methods to change values
   printf("\nSetting new values ...\n\n");
+  $obj->setEmail("niczak@gmail.com");
   $obj->setUser("niczak");
   $obj->setService("Facebook");
   $obj->setURL("http://facebook.com/niczak");
@@ -47,6 +49,7 @@ if(empty($e)) {
 
   // Call all getter methods [modified object]
   printf("\nCalling getter methods [modified object]...\n\n");
+  echo $obj->getEmail()."\n";
   echo $obj->getUser()."\n";
   echo $obj->getService()."\n";
   echo $obj->getURL()."\n";
